@@ -3,7 +3,6 @@ package com.workintech.library.bookcase;
 import com.workintech.library.enums.Genre;
 import com.workintech.library.enums.Status;
 
-import java.util.Date;
 import java.util.Objects;
 
 public class Book {
@@ -13,17 +12,17 @@ public class Book {
     private double price;
     private Status status;
     private int edition;
-    private Date dateOfPurchase;
+
     private Genre genre;
 
-    public Book(long id, String author, String name, double price, Status status, int edition, Date dateOfPurchase, Genre genre) {
+    public Book(long id, String author, String name, double price, Status status, int edition, Genre genre) {
         this.id = id;
         this.author = author;
         this.name = name;
         this.price = price;
         this.status = status;
         this.edition = edition;
-        this.dateOfPurchase = dateOfPurchase;
+
         this.genre = genre;
     }
 
@@ -83,13 +82,6 @@ public class Book {
         this.edition = edition;
     }
 
-    public Date getDateOfPurchase() {
-        return dateOfPurchase;
-    }
-
-    public void setDateOfPurchase(Date dateOfPurchase) {
-        this.dateOfPurchase = dateOfPurchase;
-    }
 
     @Override
     public String toString() {
@@ -100,7 +92,7 @@ public class Book {
                 ", price=" + price +
                 ", status=" + status +
                 ", edition=" + edition +
-                ", dateOfPurchase=" + dateOfPurchase +
+
                 ", genre=" + genre +
                 '}';
     }
