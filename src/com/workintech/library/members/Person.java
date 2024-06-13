@@ -17,7 +17,7 @@ public abstract class Person {
         this.user = user;
     }
 
-    abstract Role whoareyou();
+    abstract boolean whoAreYou(String fullName, String password );
     public String getFullName() {
         return fullName;
     }

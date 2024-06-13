@@ -5,5 +5,6 @@ public enum Genre {
     MAGAZINES,
     STUDYBOOKS,
     SCIENTIFIC,
-    NOVEL
+    NOVEL,
+    TRAGEDY
 }

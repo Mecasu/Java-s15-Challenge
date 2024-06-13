@@ -2,9 +2,7 @@ package com.workintech.library.members;
 
 import com.workintech.library.enums.User;
 
-import javax.management.relation.Role;
-
-public class Librarian extends Person{
+public class Librarian extends Person {
 
 
     public Librarian(String fullName, String password, User user) {
@@ -12,7 +10,7 @@ public class Librarian extends Person{
     }
 
     @Override
-    Role whoareyou() {
-        return null;
+    public boolean whoAreYou(String fullName, String password) {
+        return this.getFullName().equals(fullName) && this.getPassword().equals(password);
     }
 }

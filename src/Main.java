@@ -20,8 +20,9 @@ public class Main {
        Book book3 = new Book(3L, "J.D. SALINGER", "THE CATCHER IN THE RYE", 120, Status.AVAILABLE, 4, Genre.NOVEL);
        Book book4 = new Book(4L, "GEORGE ORWELL", "1984", 40, Status.AVAILABLE, 28, Genre.SCIENTIFIC);
        Book book5 = new Book(5L, "J.R.R. TOLKIEN", "LORD OF THE RINGS TRILOGY", 300, Status.AVAILABLE, 12, Genre.NOVEL);
+       Book book6 = new Book(6L, "WILLIAM SHAKESPEARE", "HAMLET", 7500, Status.AVAILABLE, 1, Genre.TRAGEDY);
 
-        Person student = new Student("Melih Can Sunay", "1234", User.STUDENT);
+        Student student = new Student("Melih Can Sunay", "1234", User.STUDENT);
         Person librarian = new Librarian("Melvil Dewey", "4321", User.LIBRARIAN);
 
         Library bookcase = new Library();
@@ -30,11 +31,20 @@ public class Main {
         bookcase.addBook(book3);
         bookcase.addBook(book4);
         bookcase.addBook(book5);
-     //   System.out.println(bookcase.getBookcase());
-     //   System.out.println(bookcase.getBookByName("LORD OF THE RINGS TRILOGY"));
-     //   System.out.println(bookcase.getBookByAuthor("J.R.R. TOLKIEN"));
-        System.out.println(bookcase.removeBookById(1L));
-        System.out.println(bookcase.getBookcase());
-
+        bookcase.addBook(book6);
+//        System.out.println(bookcase.getBookcase());
+//        System.out.println(bookcase.getBookByName("LORD OF THE RINGS TRILOGY"));
+//        System.out.println(bookcase.getBookByAuthor("J.R.R. TOLKIEN"));
+//        System.out.println(bookcase.removeBookById(1L));
+//        System.out.println(bookcase.getBookcase());
+//        student.borrowBook(book1);
+//        student.borrowBook(book2);
+//        student.borrowBook(book3);
+//        student.borrowBook(book4);
+//        student.borrowBook(book5);
+//        student.borrowBook(book6);
+//        student.returnBook(book1);
+//        System.out.println(student.whoAreYou("Melih Can Sunay", "1234"));
+//        System.out.println(student.whoAreYou("Melih Can Sunay", "12345"));
     }
 }
